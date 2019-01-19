@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProfile Page(static)</title>
+    <style>
+    html{
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    body{
+        background: rgb(162, 204, 245);
+        padding: 10px;
+        text-decoration: none;
+    }
+    .wrapper{
+        display:grid;
+        grid-gap: 35px;
+
+    }
+    .main-nav ul {
+        display:grid;
+        grid-gap:20px;
+        list-style:none;
+        grid-template-columns:repeat(4, 0.8fr);
+    }
+    .main-nav a {
+        background: rgb(150, 143, 143);
+        display: block;
+        border-style:hidden;    
+        text-decoration: none;
+        padding: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0 1px 5px rgba(71, 68, 68, 0.7);
+    }
+    /* containers */
+    .container1{
+        display: grid;
+        grid-gap:20px;
+        
+        grid-template-areas: 
+        'showcase showcase container2 container4'
+        'showcase showcase container3 container5';
+    }
+    .showcase{
+        grid-area: showcase;
+        box-shadow: 0 1px 5px rgba(71, 68, 68, 0.7);
+        text-align: center;
+        padding:10px;
+        background: url(21.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+    .container2{
+        grid-area: container2;
+        grid-area: auto;
+        background: rgb(150, 143, 143);
+        box-shadow: 0 1px 5px rgba(71, 68, 68, 0.7);
+        text-decoration: none;
+        padding: 10px;
+        text-align: center;
+    }
+    .container3{
+        grid-area: container3;
+        box-shadow: 0 1px 5px rgba(71, 68, 68, 0.7);
+        text-decoration: none;
+        background: rgb(150, 143, 143);
+        padding: 10px;
+        text-align: center;
+    }
+    .container4{
+        grid-area: container4;
+        box-shadow: 0 1px 5px rgba(71, 68, 68, 0.7);
+        text-decoration: none;
+        padding: 10px;
+        text-align: center;
+        background: rgb(150, 143, 143);
+       
+    }
+    .container5{
+        grid-area: container5;
+        box-shadow: 0 1px 5px rgba(71, 68, 68, 0.7);
+        text-decoration: none;
+        padding: 10px;
+        text-align: center;
+        background: rgb(150, 143, 143);
+    }
+    .box{
+        box-shadow: 0 1px 5px rgba(71, 68, 68, 0.7);
+        text-decoration: none;
+        background: rgb(150, 143, 143);
+        padding: 10px;
+        text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--wrapping start-->
+      <!--Navigation-->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#"> Home</a></li>
+
+          <li><a href="#"> About</a></li>
+
+          <li><a href="#"> Projects</a></li>
+
+          <li><a href="#cont"> Contact</a></li>
+        </ul>
+      </nav>
+      <!--Nav End-->
+      <!--description boxes-->
+      <section class="container1">
+        <header class="showcase">
+          <h2>Sai Teja</h2>
+          <p>Web designing</p>
+        </header>
+        <div class="container2">
+          <h3>Bachelors</h3>
+          <p>From BVRIT, India with ECE Major</p>
+        </div>
+        <div class="container3">
+          <h3>Masters</h3>
+          <p>SUNY Polytechnic institute, NY with NCS Telecom Major</p>
+        </div>
+        <div class="container4">
+            <a href="https://www.bvrit.ac.in" target="_blank"><img src="download (1).png"></img></a>
+        </div>
+        <div class="container5">
+            <a href="https://www.sunypoly.edu" target="_blank"><img src="download.png"></img></a>
+        </div>
+        <!--Random boxes-->
+        
+        <div class="box">
+            <h3>random box 1</h3>
+            <p>text here</p>
+        </div>
+        <div class="box">
+            <h3>random box 2</h3>
+            <p>text here</p>
+        </div>
+        <div class="box">
+            <h3>random box 3</h3>
+            <p>text here</p>
+        </div>
+        <div class="box">
+            <h3>random box 4</h3>
+            <p></p>
+        </div> 
+    
+        <!--Contact-->
+        <div>
+            <h2 id="cont">Contact us</h2>
+            <p>For Addition Info please reach us and we will reach out to you</p>
+            <form>
+                First Name: <input type="text" name="firstName" size="20">
+                <br><br>
+                Last Name:  <input type="text" name="lastName" size="20">
+                <br><br>
+                Email_ID:   <input type="email" name="emailID" size="50">
+                <br><br>
+                <input type="button" value="Submit">
+            </form>
+        </div>
+
+      </section>
+
+      <footer>
+          Sai Teja  &copy; 2019
+          <br>
+          <p>Last visited</p>
+          <p id="demo"></p>
+
+          <script>
+          var d = new Date();
+          document.getElementById("demo").innerHTML = d;
+          </script>
+      </footer>
+    </div>
+    <!-- Wrapping done-->
+  </body>
+</html>
