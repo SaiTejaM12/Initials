@@ -50,6 +50,13 @@ for (var i = 0; i < operator.length; i++) {
           var result = eval(action);
           printAction(result);
           printResult(result);
+          /*if (
+            number[i].addEventListener("click", function() {
+              if (this.class == "number" || this.class == "operator") {
+                printResult("");
+              }
+            })
+          )*/
           setTimeout(function() {
             printResult("");
             printAction("");
