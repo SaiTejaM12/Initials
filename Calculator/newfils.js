@@ -15,18 +15,25 @@ function printResult(num) {
     return (document.getElementById("result_value").innerText = num);
   }
 }
+var calButton = document.getElementsByClassName("cal-btn");
+for (var i = 0; i < calButton.length; i++) {
+  calButton[i].addEventListener("click", function() {
+    var lastId = undefined;
+    if (lastId == "=" && this.id.class != "operator") {
+      printResult("");
+      printResult(this.id);
+    }
+  });
+}
 var number = document.getElementsByClassName("number");
 for (var i = 0; i < number.length; i++) {
-  if (i > 10) break;
-  else {
-    number[i].addEventListener("click", function() {
-      var output = getResult();
-      if (output != NaN) {
-        output = output + this.id;
-        printResult(output);
-      }
-    });
-  }
+  number[i].addEventListener("click", function() {
+    var output = getResult();
+    if (output != NaN) {
+      output = output + this.id;
+      printResult(output);
+    }
+  });
 }
 
 var operator = document.getElementsByClassName("operator");
@@ -50,17 +57,11 @@ for (var i = 0; i < operator.length; i++) {
           var result = eval(action);
           printAction(result);
           printResult(result);
-          /*if (
-            number[i].addEventListener("click", function() {
-              if (this.class == "number" || this.class == "operator") {
-                printResult("");
-              }
-            })
-          )*/
-          setTimeout(function() {
-            printResult("");
-            printAction("");
-          }, 15000);
+          
+            setTimeout(function() {
+              printResult("");
+              printAction("");
+            }, 15000);
         } else if (this.id == ".") {
           var output = getResult();
           if (output != NaN) {

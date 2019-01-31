@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="coffee.css" />
+  </head>
+  <body
+    style="background-image: url('upfeathers.png'); background-repeat: repeat "
+  >
+    <nav class="navigation">
+      <ul>
+        <li><a href="coffee.html"> HOME </a></li>
+        <li><a href="orders.html"> ORDERS </a></li>
+        <li><a href="review.html"> REVIEW </a></li>
+      </ul>
+    </nav>
+
+    <section class="container content-section">
+      <h2 class="section-header">Coffee Order</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Hot Coffee</span>
+          <img class="shop-item-image" src="hot-coffee.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$2</span>
+            <button class="btn  shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Espresso</span>
+          <img class="shop-item-image" src="espresso.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$5</span>
+            <button class="btn  shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Ice Coffee</span>
+          <img class="shop-item-image" src="iced-coffee.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$4</span>
+            <button class="btn  shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Cappuchino</span>
+          <img class="shop-item-image" src="Cappuccino.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$4</span>
+            <button class="btn  shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item ">ITEM</span>
+        <span class="cart-price ">PRICE</span>
+        <span class="cart-quantity ">QUANTITY</span>
+        <span class="item-total">ITEM TOTAL</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+      </div>
+      <button
+        class="btn  btn-purchase"
+        type="button"
+        onclick="window.open('https://paypal.me/SaiTejaMuddana?locale.x=en_US','_blank')"
+      >
+        PURCHASE
+      </button>
+    </section>
+  </body>
+  <script src="coffeeshop.js"></script>
+</html>
