@@ -18,24 +18,21 @@ for (var i = 0; i < getLocate.length; i++) {
   });
 
 
-function get(url) {
-  return new Promise(function(resolve, reject) {
-    var req = new XMLHttpRequest();
-    req.open("GET", url);
+// function get(url) {
+//   return new Promise(function(resolve, reject) {
+//     var req = new XMLHttpRequest();
+//     req.open("GET", url);
 
-    req.onreadystatechange = function() {
-      if (req.status == 200 && req.readyState == 4) {
-        resolve(req.response);
-      } else {
-        reject(Error(req.statusText));
-      }
-    };
+//     req.onreadystatechange = function() {
+//       if (req.status == 200 && req.readyState == 4) {
+//         resolve(req.response);
+//       } else {
+//         reject(Error(req.statusText));
+//       }
+//     };
 
-    req.send();
-  });
-}
+//     req.send();
+//   });
+// }
 
-// get(  api.openweathermap.org / data / 2.5 / weather
-//     ? lat
-//     : $(latitude) && lon(longitude)
-// );
+get(api.openweathermap.org / data / 2.5 / weather?lat={$latitude}&&lon={$longitude});
