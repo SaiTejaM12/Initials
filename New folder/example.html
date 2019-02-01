@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Weather</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <script src="example.js"></script>
   </head>
   <body>
-    <header class="head"><h1 class="headings">Weather Page</h1></header>
+    <header class="head">
+      <h1 class="headings">Weather Page</h1>
+      <nav class="navigation"></nav>
+    </header>
     <section class="weather">
       <div class="located">
-        <button id="locator" onclick="getLocation()">Get Location</button>
+        <button class="located" id="locator">Get Location</button>
       </div>
       <div class="getWeather"><p id="weather-data"></p></div>
     </section>
   </body>
+  <script src="example.js"></script>
 </html>
