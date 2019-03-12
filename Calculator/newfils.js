@@ -57,11 +57,11 @@ for (var i = 0; i < operator.length; i++) {
           var result = eval(action);
           printAction(result);
           printResult(result);
-          
-            setTimeout(function() {
-              printResult("");
-              printAction("");
-            }, 15000);
+
+          setTimeout(function() {
+            printResult("");
+            printAction("");
+          }, 15000);
         } else if (this.id == ".") {
           var output = getResult();
           if (output != NaN) {

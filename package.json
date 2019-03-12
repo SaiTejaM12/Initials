@@ -1,0 +1,23 @@
+{
+  "name": "webpack-re",
+  "version": "1.0.0",
+  "description": "web pack with react and babel",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaiTejaM12/Initials.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaiTejaM12/Initials/issues"
+  },
+  "homepage": "https://github.com/SaiTejaM12/Initials#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
