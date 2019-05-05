@@ -1,8 +1,10 @@
 var calculate = {
   displayValue: "0",
   firstOperand: null,
-  operator: null
+  operator: null,
+  secondOperand: null
 };
 
-const butkeys = document.querySelector(".keys");
-butkeys.addEventListener("click ");
+calculate.firstOperand;
+
+document.getElementsByClassName("number");

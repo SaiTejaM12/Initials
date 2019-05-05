@@ -25,6 +25,7 @@ body {
   list-style: none;
   padding: 10px;
   grid-template-columns: repeat(3, 0.9fr);
+  transform: translateZ(2px);
 }
 .navbar1 a {
   background: rgb(172, 164, 148);
@@ -48,7 +49,7 @@ body {
   border-radius: 10px;
 }
 
-.wrapper::after {
+.wrapper::before {
   content: "";
   background: url(coffee-shop.jpg);
   background-attachment: scroll;

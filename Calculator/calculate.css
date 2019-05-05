@@ -1,16 +1,16 @@
 body {
-  background-color: grey;
+  background-color: whitesmoke;
   font-family: "coiny", cursive;
 }
 .wrapper {
   width: 1000px;
-  height: 800px;
+  height: 900px;
   margin: 10px auto;
 }
 .calculator {
   width: 500px;
   background-color: black;
-  height: 750px;
+  height: 900px;
   margin: 0 auto;
   box-shadow: 1px 5px 5px 2px rgba(82, 72, 72, 0.6);
   border-radius: 20px;
@@ -20,28 +20,35 @@ body {
   height: 30%;
   background-color: black;
   color: aliceblue;
+  box-sizing: border-box;
+  border: 10px solid black;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 #display_actions {
   height: 80px;
-  margin: 5px 35px;
+  margin: 5px 20px;
   font-size: 20px;
+  font-family: "Kalam", cursive;
   padding: 15px 20px;
   text-align: right;
+  border: 10px solid darkblue;
 }
 #result {
   height: 100px;
   text-align: right;
   font-size: 35px;
+  font-family: "Kalam", cursive;
   margin: 5px 20px;
   padding: 0 20px;
+  border: 10px solid navy;
 }
+
 #dispplay_actions,
 #result span {
   position: absolute;
   white-space: nowrap;
-  transform: translateX();
+  text-anchor: end;
 }
 
 .keys {
@@ -53,17 +60,17 @@ body {
 }
 .cal-color1,
 .cal-color2 {
-  width: 18%;
+  width: 20%;
   height: 15%;
-  margin: 2%;
+  margin: 2.5%;
   float: left;
-
+  outline: none;
   border: 1px solid grey;
   display: block;
   font-family: "coiny", cursive;
   font-size: 20px;
   background-color: silver;
-  border-radius: 50%;
+  border-radius: 45%;
 }
 .cal-color1 {
   background-color: orange;
@@ -76,6 +83,7 @@ body {
 }
 .cal-color2:active {
   transform: translateY(1px);
-  background-color: rgb(130, 130, 148);
+  background-color: rgb(59, 59, 66);
   border: none;
+  color: white;
 }

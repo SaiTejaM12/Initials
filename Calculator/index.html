@@ -4,7 +4,7 @@
   <head>
     <link rel="Stylesheet" href="calculate.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=coiny|Roboto+Slab"
+      href="https://fonts.googleapis.com/css?family=coiny|Roboto+Slab|Kalam"
       rel="stylesheet"
     />
   </head>
@@ -13,8 +13,8 @@
       <div class="calculator">
         <div class="display_result">
           <div id="display_actions"><p id="display_actions_value"></p></div>
-          <div id="result"><p id="result_value"></p></div>
-        </div>
+          <span><div id="result"><div id= "operand"><p id="operator_value"></p></div><span><p id="result_value"></p></span></div>
+        </div></span>
         <div class="keys">
           <span><button class="operator cal-color2" id="clear">AC</button></span>
           <span><button class="operator cal-color2" id="delete">C</button></span>
@@ -35,13 +35,13 @@
           <span><button class="operator cal-color2" id="+-">&PlusMinus;</button></span>
           <span><button class="number cal-color2" id="0">0</button></span>
           <span><button class="operator cal-color2" id=".">&period;</button></span>
-          <span><button class="operator cal-color1" id="=">&equals;</button></span>
+          <span><button class="operator cal-color1 equal" id="=">&equals;</button></span>
         </div>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="newfils.js"></script>
-    <!-- <script src="calculators.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="newfils.js"></script> -->
+    <script src="calculators.js"></script>
   </body>
 
 </html>
